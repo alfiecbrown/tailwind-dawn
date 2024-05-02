@@ -1,0 +1,17 @@
+{
+    "name": "tailwind-dawn",
+    "version": "1.0.0",
+    "description": "[![Build status](https://github.com/shopify/dawn/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/Shopify/dawn/actions/workflows/ci.yml?query=branch%3Amain) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?color=informational)](/.github/CONTRIBUTING.md)",
+    "private": true,
+    "scripts": {
+        "shopify": "shopify theme dev -s [store-name]",
+        "tailwind": "npx tailwindcss -i tailwind.css -o ./assets/wiro.css --watch --minify",
+        "dev": "concurrently \"npm run tailwind\" \"npm run shopify\""
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "concurrently": "^8.2.2",
+        "tailwindcss": "^3.4.3"
+    }
+}
